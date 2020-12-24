@@ -187,12 +187,15 @@ filter: brightness(1);
   }
 }
   /* section1 */
-.section{
-  /* position: relative; */
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-} 
+  .section{
+    /* position: relative; */
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  } 
+  .section1 {
+    position: relative;
+    }
 section > .container-fluid{
   padding: 0;
   margin: 0;
