@@ -331,6 +331,14 @@ p.b3{
 img.gamestartbg{
   z-index: 2;
 }
+img.gameoverbg{
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  top: 0;
+}
 .btn {
   z-index: 2;
   --hue: 115;

@@ -45,6 +45,7 @@ window.addEventListener('load', () =>{
 var button = document.getElementsByClassName("btn-game")[0];
 var gamestart = document.getElementsByClassName("gamestartbg")[0];
 var gamebg = document.getElementsByClassName("game_bg")[0];
+var gameansbg = document.getElementsByClassName("gameansbg")[0];
 button.onclick = function() {
   button.style.display = "none";
   gamestart.style.opacity = "0";
@@ -62,25 +63,73 @@ var ans2 = document.getElementsByClassName("ans2")[0];
 var ans3 = document.getElementsByClassName("ans3")[0];
 var ans4 = document.getElementsByClassName("ans4")[0];
 var ans5 = document.getElementsByClassName("ans5")[0];
+var gameover = document.getElementsByClassName("gameoverbg")[0];
+var num;
+num = 1;
+var score;
+score = 5;
+var count;
+count = 0;
 coin1.onclick = function() {
   coin1.style.filter = "drop-shadow(0px 0px 10px rgb(255,255,255))";
-  ans1.style.filter = "brightness(1)"
+  ans1.style.filter = "brightness(1)";
+  count+=num;
+  if(count>=score){
+    gameover.style.display = "block";
+    gameover.style.zIndex="5";
+    document.getElementsByClassName("game_content")[0].style.zIndex="-2";
+    gamebg.style.opacity = "0"; 
+    gameansbg.style.opacity = "0",200; 
+  }
+  
 }
 coin2.onclick = function() {
   coin2.style.filter = "drop-shadow(0px 0px 10px rgb(255,255,255))";
-  ans2.style.filter = "brightness(1)"
+  ans2.style.filter = "brightness(1)";
+  count+=num;
+  if(count>=score){
+    gameover.style.display = "block";
+    gameover.style.zIndex="5";
+    document.getElementsByClassName("game_content")[0].style.zIndex="-2";
+    gamebg.style.opacity = "0"; 
+    gameansbg.style.opacity = "0",200; 
+  }
 }
 coin3.onclick = function() {
   coin3.style.filter = "drop-shadow(0px 0px 10px rgb(255,255,255))";
-  ans3.style.filter = "brightness(1)"
+  ans3.style.filter = "brightness(1)";
+  count+=num;
+  if(count>=score){
+    gameover.style.display = "block";
+    gameover.style.zIndex="5";
+    document.getElementsByClassName("game_content")[0].style.zIndex="-2";
+    gamebg.style.opacity = "0"; 
+    gameansbg.style.opacity = "0",200; 
+  }
 }
 coin4.onclick = function() {
   coin4.style.filter = "drop-shadow(0px 0px 10px rgb(255,255,255))";
-  ans4.style.filter = "brightness(1)"
+  ans4.style.filter = "brightness(1)";
+  count+=num;
+  if(count>=score){
+    gameover.style.display = "block";
+    gameover.style.zIndex="5";
+    document.getElementsByClassName("game_content")[0].style.zIndex="-2";
+    gamebg.style.opacity = "0"; 
+    gameansbg.style.opacity = "0",200; 
+  }
 }
 coin5.onclick = function() {
   coin5.style.filter = "drop-shadow(0px 0px 10px rgb(255,255,255))";
-  ans5.style.filter = "brightness(1)"
+  ans5.style.filter = "brightness(1)";
+  count+=num;
+  if(count>=score){
+    gameover.style.display = "block";
+    gameover.style.zIndex="5";
+    document.getElementsByClassName("game_content")[0].style.zIndex="-2";
+    gamebg.style.opacity = "0"; 
+    gameansbg.style.opacity = "0",200; 
+  }
 }
 
 $(function(){
